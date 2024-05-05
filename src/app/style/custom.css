@@ -1,0 +1,58 @@
+
+.title {
+    font-family: 'MonumentExtendedRegular', sans-serif;
+    font-size: 68px;
+    line-height: 1.1;
+}
+.text-gradient {
+    background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 1.1;
+}
+h5 {
+    font-size: 38px;
+    line-height: 1.1;
+}
+
+@media screen and (max-width: 980px) {
+    .title {
+        font-size: 48px;
+    }
+    h5 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 32px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+}
+
+.gradient-border {
+    position: relative;
+    border: solid 3px transparent; /* Ensures the border size */
+  }
+  
+  .gradient-border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: -3px; /* Adjust this value to match your border size */
+    border-radius: inherit; /* Matches the border-radius of the parent if any */
+    background: linear-gradient(to right, #3D8BFF, #AB23FF); /* Example gradient */
+    -webkit-mask:
+    linear-gradient(#fff 0 0) content-box, /* makes inner part transparent */
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+          mask-composite: exclude; /* this cuts the inner part out */
+  }

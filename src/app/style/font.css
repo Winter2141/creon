@@ -1,0 +1,47 @@
+
+
+@font-face {
+    font-family: 'SatoshiBold';
+    src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SatoshiMedium';
+    src: url('/fonts/Satoshi-Medium.woff2') format('woff2');
+    font-weight: medium;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SatoshiRegular';
+    src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
+    font-weight: regular;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'MonumentExtendedRegular';
+    src: url('/fonts/MonumentExtended-Regular.woff2') format('woff2');
+    font-weight: regular;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'SatoshiRegular', sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'MonumentExtendedRegular', sans-serif;
+  }
+  .font-bold {
+      font-family: 'SatoshiBold', sans-serif;
+  }
+  .font-regular {
+      font-family: 'SatoshiRegular', sans-serif;
+  }
+  a {
+      font-family: 'SatoshiBold', sans-serif;
+  }
