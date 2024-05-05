@@ -54,7 +54,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                                 <div className="flex gap-2 flex-col justify-end ml-12 mt-12">
                                     {
                                         links.map((link, index) => (
-                                            <div className={`${index === 0 ? 'border-t' : ''} border-b border-gray-900 py-3`}>
+                                            <div key={index} className={`${index === 0 ? 'border-t' : ''} border-b border-gray-900 py-3`}>
                                                 <Link key={index} href={link.href} text={link.text} badge={link.badge}></Link>
                                             </div>
                                         ))
