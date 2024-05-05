@@ -5,7 +5,7 @@ const ComingSoonCard: React.FC<CardProps> = ({ title, subTitle, imgSrc, descript
   return (
     <div className="relative bg-gray-900 rounded max-w-[450px] py-10">
         <div className="absolute -top-2 right-4 rounded-full font-bold text-[12px] px-2 bg-white text-black uppercase">coming soon</div>
-        <div className="px-8 h-36">
+        <div className="px-8 md:h-36 h-24">
             <h5 className="uppercase">{title}</h5>
             <p className="text-gradient font-bold text-[22px]">{subTitle}</p>
         </div>
